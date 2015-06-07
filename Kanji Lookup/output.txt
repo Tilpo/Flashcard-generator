@@ -1,0 +1,1 @@
+import codecs, os;__pyfile = codecs.open('''c:/Users/Rik/AppData/Local/Temp/py1784HOi''', encoding='''utf-8''');__code = __pyfile.read().encode('''utf-8''');__pyfile.close();os.remove('''c:/Users/Rik/AppData/Local/Temp/py1784HOi''');exec(compile(__code, '''c:/Users/Rik/Dropbox/Small projects/Flashcard generator/Kanji Lookup/vocab.py''', 'exec'));

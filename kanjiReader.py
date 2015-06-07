@@ -43,7 +43,7 @@ legalCharList = open('kanjiList.txt','r',encoding='utf-8')
 legalChars = legalCharList.read()
 legalCharList.close()
 
-char = "制"
+char = "穣"
 wordList = []
 for child in voc: #find all the words that contain the character
 	keb = child.find(".k_ele/keb")
@@ -62,12 +62,12 @@ def is_legal(char):
 wordList2=[]		
 for child in wordList: #remove the words that have an unallowed character
 	keb = child.find(".k_ele/keb").text
-	legal = True
-	for i in keb:
-		if not is_legal(i):
-			legal = False
-	if legal:
-		wordList2.append(child)
-		output.write(keb+", ")
+	#legal = True
+	#for i in keb:
+	#	if not is_legal(i):
+	#		legal = False
+	#if legal:
+	wordList2.append(child)
+	output.write(keb+", ")
 
 output.close()
